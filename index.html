@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <div id="container2"></div>
+    <div id="container3"></div>
+    <div id="container4"></div>
+    <div id="container5"></div>
+    <div id="container6"></div>
+    <script>
+        // *       
+        // **
+        // ***
+        // ****
+        // *****
+        // ******
+        // *******
+        // ********
+        // *********
+        // **********
+        for (let i = 0; i < 11; i++) {
+            for (let j = 0; j < i; j++) {
+
+                document.getElementById("container").innerHTML += "*";
+            }
+            document.getElementById("container").innerHTML += "<br>"
+        }
+
+        //                     *
+        //                   **
+        //                 ***
+        //               ****
+        //             *****
+        //           ******
+        //         *******
+        //       ********
+        //     *********
+        //   **********
+
+        for (let i = 0; i < 11; i++) {
+            document.getElementById('container2').innerHTML += '<br/>';
+            for (let j = 0; j < 11 - i; j++) {
+                document.getElementById('container2').innerHTML += '&nbsp&nbsp';
+            }
+            for (let k = 11 - i; k < 11; k++) {
+                document.getElementById("container2").innerHTML += "*";
+
+            }
+        }
+
+        // ***********
+        // **********
+        // *********
+        // ********
+        // *******
+        // ******
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+
+        for (let i = 0; i < 11; i++) {
+            document.getElementById('container3').innerHTML += '<br/>';
+            for (let j = 0; j < 11 - i; j++) {
+                document.getElementById("container3").innerHTML += "*";
+            }
+        }
+
+        // * * * * * * * * * * *
+        //    * * * * * * * * * *
+        //       * * * * * * * * *
+        //          * * * * * * * *
+        //             * * * * * * *
+        //                * * * * * *
+        //                   * * * * *
+        //                      * * * *
+        //                         * * *
+        //                            * *
+        //                               *
+
+        for (let i = 0; i < 11; i++) {
+            for (let j = 0; j < i; j++) {
+                document.getElementById('container4').innerHTML += "&nbsp&nbsp&nbsp";
+            }
+            for (let j = 11; j > i; j--) {
+                document.getElementById('container4').innerHTML += "*";
+                if (j > i + 1) document.getElementById('container4').innerHTML += "&nbsp;";
+            }
+            document.getElementById('container4').innerHTML += '<br/>'
+        }
+
+        //           *
+        //          **
+        //         ***
+        //        ****
+        //       *****
+        //      ******
+        //     *******
+        //    ********
+        //   *********
+        //  **********
+
+        for (let i = 0; i < 11; i++) {
+            document.getElementById('container5').innerHTML += '<br/>';
+            for (let j = 0; j < 11 - i; j++) {
+                document.getElementById('container5').innerHTML += '&nbsp';
+            }
+            for (let k = 11 - i; k < 11; k++) {
+                document.getElementById("container5").innerHTML += "*";
+            }
+        }
+
+        // * * * * * * * * * * *
+        //  * * * * * * * * * *
+        //   * * * * * * * * *
+        //    * * * * * * * *
+        //     * * * * * * *
+        //      * * * * * *
+        //       * * * * *
+        //        * * * *
+        //         * * *
+        //          * *
+        //           *
+
+        for (var i = 0; i < 11; i++) {
+            for (var j = 0; j < i; j++) {
+                document.getElementById('container6').innerHTML += "&nbsp";
+            }
+            for (var j = 11; j > i; j--) {
+                document.getElementById('container6').innerHTML += "*";
+                if (j > i + 1) document.getElementById('container6').innerHTML += "&nbsp";
+            }
+            document.getElementById('container6').innerHTML += '<br/>';
+        }
+    </script>
+</body>
+
+</html>
